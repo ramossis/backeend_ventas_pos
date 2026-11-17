@@ -13,9 +13,18 @@
   "type": "commonjs",
   "dependencies": {
     "dotenv": "^18.0.9",
-    "express": "^5.3.0"
+    "express": "^5.3.0",
+    "mysql2": "^3.24.6"
   },
   "devDependencies": {
     "nodemon": "^3.1.14"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ramossis/backeend_ventas_pos.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ramossis/backeend_ventas_pos/issues"
+  },
+  "homepage": "https://github.com/ramossis/backeend_ventas_pos#readme"
 }
