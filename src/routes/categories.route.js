@@ -3,5 +3,6 @@ const route=express.Router()
 const CategoiresController=require("../controllers/categories.controller")
 
 route.get("/",CategoiresController.getAllCategories)
-route.post("/jk",,,)
+route.post("/",CategoiresController.createCategories)
+
 module.exports=route
