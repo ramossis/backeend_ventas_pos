@@ -1,9 +1,10 @@
 const express=require('express')
+const route=express.Router()
+const ProductsController=require("../controllers/products.controller")
 
-const app=express.Router()
+route.get("/",ProductsController.getAllProducts)
+route.post("/",ProductsController.createProducts)
+route.put("/:id",ProductsController.updateProducts)
+route.delete("/:id",ProductsController.deleteProducts)
 
-const productsController=require("../controllers/products.controller")
-
-app.get("/",productsController.getAllProduct)
-
-module.exports=app
+module.exports=route
